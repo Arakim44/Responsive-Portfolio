@@ -65,3 +65,7 @@ br{
   box-sizing: border-box;
   resize: none;
 }
+
+input:hover{
+  opacity: .8;
+}

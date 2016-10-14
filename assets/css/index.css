@@ -14,7 +14,7 @@ body{
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  /*clear: both;*/
+  clear: both;
 }
 
 h1,
@@ -73,7 +73,7 @@ ul, p{
 
 #logo {
   width: 250px;
-  height:54px;
+  height:56px;
   background: #4aaaa5;
   float: left;
   font-family: 'Raleway', sans-serif;
@@ -126,28 +126,35 @@ li a{
   display: inline-block;
   color: #cccccc;
   text-align: center;
-  padding: 15px 20px;
+  padding: 16px 20px;
   text-decoration: none;
+
 }
 
-li a, img.connect {
+li a,li, img.social {
   -webkit-transition: all .15s ease-out 0s;
   -moz-transition: all .15s ease-out 0s;
   transition: all .15s ease-out 0s;
 }
 
 
-li a:hover{
+li:hover{
   background-color: #555;
   color: white;
+}
+li a:hover{
+  color:white;
 }
 li a:active{
   background-color: #4aaaa5;
 }
 
-.active{
-  background-color:  #4aaaa5;
+
+#active{
+  background-color: #4aaaa5;
   color: white;
+  /*padding:16px 20px;*/
+  /*border-bottom: : solid #4aaaa5;*/
 }
 
 
@@ -184,6 +191,7 @@ li a:active{
   color: #cbb;
   text-align: left;
   padding: 10px 0 20px;
+  font-size: 115%;
 }
 
 
@@ -191,7 +199,7 @@ li a:active{
 
 .sidebar{
   background: #fff;
-  padding: 30px;
+  padding: 20px;
   width: 270px;
   /*width: 100%;*/
   /*max-width: 270px;*/
@@ -249,12 +257,17 @@ footer {
 
 @media only screen and (max-width: 640px) {
      /*For tablets: */
-     #logo{
-       width:100%;
+     #logo{width:100%;}
+     li{width:33.3%;
+       text-align: center;}
+     li a:hover{
+
      }
-     li{
-       width:33.3%;
-       text-align: center;
+     #bio-image{width:100%;}
+     #main-container{padding-top: 130px;}
+     #portfolio{
+       max-width: none;
+       width:100%;
      }
      .col-1 {width: 8.33%;}
      .col-2 {width: 16.66%;}
@@ -273,6 +286,7 @@ footer {
 
 @media only screen and (min-width: 640px) and (max-width: 768px) {
      /*For tablets: */
+     #bio-image{width:50%;}
      .col-s-1 {width: 8.33%;}
      .col-s-2 {width: 16.66%;}
      .col-s-3 {width: 25%;}
@@ -288,6 +302,12 @@ footer {
 }
 @media only screen and (min-width: 768px)  and (max-width: 980px) {
      /*For desktop: */
+     .img{
+       max-width: none;
+       width:100%;
+     }
+
+     #bio-image{width:100%;}
      .col-m-1 {width: 8.33%;}
      .col-m-2 {width: 16.66%;}
      .col-m-3 {width: 25%;}
@@ -315,4 +335,4 @@ footer {
     .col-l-9 {width: 75%;}
     .col-l-10 {width: 83.33%;}
     .col-l-11 {width: 91.66%;}
-}*/*/
+}*/
