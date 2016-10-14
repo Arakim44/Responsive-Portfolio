@@ -266,6 +266,7 @@ footer {
        max-width: none;
        width:100%;
      }
+     .col-4 {width: 33.33%;}
      .col-11 {width: 91.66%;}
      .col-12 {width: 100%;}
 
@@ -284,6 +285,7 @@ footer {
        max-width: none;
        width:100%;
      }
+      #bio-image{width:100%;}
      .col-m-5 {width: 41.66%;}
      .col-m-6 {width: 50%;}
      .col-m-9 {width: 75%;}
